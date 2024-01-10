@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table ,td{
+                border: 1px solid black;
+            }
+        </style>
+
+        <link rel="stylesheet" href="../assignment 07/style.css">
+    
+    </head>
+
+    <body>
+
+        <center>
+
+        <!-- Task 1 -->
+
+        <h1> Nested Tables </h1>
+
+        <table>
+
+            <tr>
+                <td> <b> Header coloumn 1 </b> </td>
+                <td> <b> Header coloumn 2 </b> </td>
+                <td> <center> <b> Header coloumn 3 </b> </center> </td>
+                <td> <b> Header coloumn 4 </b> </td>
+            </tr>
+
+            <tr>
+                <td> Row 2 -Item 1 </td>
+                <td> Row 2 -Item 2 </td>
+
+                <td rowspan="2"> <b> Row 2:Nested Table 1 </b><br><br>
+                    <table>
+                        <tr>
+                            <td><b>Row 1 Header</b></td>
+                            <td>item</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Row 2 Header</b></td>
+                            <td>item</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Row 3 Header</b></td>
+                            <td>item</td>
+                        </tr> 
+                    </table>
+                 </td>
+
+                <td> Row 2 -Item 4 <br>A second line </td>
+            </tr>
+
+            <tr>
+                <td> <b> Row 3:Nested Table 2 </b> <br><br>
+                    <table>
+                        <tr>
+                            <td><b>Row 1 Header</b></td>
+                            <td>item</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Row 2 Header</b></td>
+                            <td>item</td>
+                        </tr>
+                    </table>                
+                </td>
+                <td>  Row 3 -Item 2  </td>
+                <td rowspan="2">  Row 3 -Item 3  </td>
+            </tr>
+
+            <tr>
+                <td> Row 4 -Item1 </td>
+                <td> Row 4 -Item2 </td>
+                <td> Row 4 -Item3 </td>
+            </tr>
+
+            <tr>
+                <td colspan="4"> Row 5-Last row of outer table </td>
+            </tr>
+
+        </table>
+
+        
+
+        <br><hr><br>
+
+        <!-- Task 2 -->
+
+        <table>
+
+            <tr>
+                <td rowspan="3"> <center> <b> Day </b> </center> </td>
+                <td colspan="3"> <center> <b> Seminar </b> </center> </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"> <center> <b> Schedule </b> </center> </td>
+                <td colspan="2" rowspan="2"> <center> <b> Topic </b> </center> </td>
+            </tr>
+
+            <tr>
+                <td> <center> <b> Begin </b> </center> </td>
+                <td> <center> <b> End </b> </center> </td>
+            </tr>
+
+            <tr>
+                <td rowspan="2"> Monday </td>
+                <td rowspan="2"> 8:00 a.m. </td>
+                <td rowspan="2"> 5:00 p.m. </td>
+                <td> Introduction to XML </td>
+            </tr>
+
+            <tr>
+                <td> Validity:DTD and Relax NG </td>
+            </tr>
+
+            <tr>
+                <td rowspan="3"> Tuesday </td>
+                <td> 8:00 a.m. </td>    
+                <td> 11:00 a.m. </td>
+                <td rowspan="3"> <center> XPath </center> <hr>
+                <center> XSL Transformations </center> </td>
+            </tr>
+
+            <tr>
+                <td> 11:00 a.m. </td>
+                <td> 2:00 p.m. </td>
+            </tr>
+
+            <tr>
+                <td> 2:00 p.m. </td>
+                <td> 5:00 p.m.</td>    
+                <!--<td> <center> XSL Transformations </center> </td>-->
+            </tr>
+
+            <tr>
+                <td> Wednesday </td>
+                <td> 8:00 p.m. </td>
+                <td> 12:00 p.m. </td>
+                <td> <center> XSL Formatting Objects </center> </td>
+            </tr>
+
+        </table>
+
+        <br><hr><br>
+
+        <!-- Task 3 -->
+
+        <table>
+            <tr>
+                <td colspan="6"> <b> Athletics Day Time Table </b> </td>
+            </tr>
+
+            <tr>
+                <td> <b> Area </b> </td>
+                <td> <b> 10am-11am </b> </td>
+                <td> <b> 11am-12pm </b> </td>
+                <td> <b> 12pm-1pm </b> </td>
+                <td> <b> 1pm-2pm </b> </td>
+                <td> <b> 2pm-3pm </b> </td>
+            </tr>
+
+            <tr>
+                <td rowspan="2"> <b> Track </b> </td>
+                <td> 400m </td>
+                <td> 200m </td>
+                <td rowspan="3"> <center> <b> Lunch </b> </center> </td>
+                <td> 800m </td>
+                <td> 100m </td>
+            </tr>
+            
+            <tr>
+                <td> Hurdles </td>
+                <td> 1500m </td>
+                <td> Free </td>
+                <td> 80m </td>
+            </tr>
+
+            <tr>
+                <td> <b> Field </b> </td>
+                <td> Discus </td>
+                <td> Javelin </td> 
+                <td> Shot pot </td>
+                <td> Hammer throw </td>
+            </tr>
+        </table>
+        
+        <br><hr><br>
+        
+        <!-- Task 4 -->
+
+        <div>
+            <center> <b> Mark Sheet Of 2077 </b> </center>
+
+        <table background-color="green">
+            <tr>
+                <td rowspan="4"> <b> S.NO. </b> </td>
+                <td rowspan="4"> <center> <b> Name </b> </center> </td>
+                <td colspan="6"> <center> <b> Subject </b> </center> </td>
+                <td rowspan="4"> <b> Total </b> </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"> <center> <b> Science </b> </center> </td>
+                <td colspan="2"> <center> <b> Social </b> </center> </td>
+                <td colspan="2"> <center> <b> Computer </b> </center> </td>
+            </tr>
+
+            <tr>
+                <td colspan="6"> <center> <b> Marks </b> </center> </td>
+            </tr>
+
+            <tr>
+                <td> <b> Internal </b> </td>
+                <td> <b> Final </b> </td>
+                <td> <b> Internal </b> </td>
+                <td> <b> Final </b> </td>
+                <td> <b> Internal </b> </td>
+                <td> <b> Final </b> </td>
+            </tr>
+
+            <tr>
+                <td> 1. </td>
+                <td> Bikash </td>
+                <td> 10 </td>
+                <td> 12 </td>
+                <td> 43 </td>
+                <td> 43 </td>
+                <td> 43 </td>
+                <td> 43</td>
+                <td> 50</td>
+            </tr>
+
+            <tr>
+                <td> 2. </td>
+                <td> Bikesh </td>
+                <td> 10 </td>
+                <td> 12 </td>
+                <td> 43 </td>
+                <td> 43 </td>
+                <td> 43 </td>
+                <td> 43</td>
+                <td> 50</td>
+            </tr>
+
+            <tr>
+                <td> 3. </td>
+                <td> Avinash </td>
+                <td> 10 </td>
+                <td> 12 </td>
+                <td> 43 </td>
+                <td> 43 </td>
+                <td> 43 </td>
+                <td> 43</td>
+                <td> 50</td>
+            </tr>
+
+            <tr>
+                <td> 4. </td>
+                <td> Ram </td>
+                <td> 10 </td>
+                <td> 12 </td>
+                <td> 43 </td>
+                <td> 43 </td>
+                <td> 43 </td>
+                <td> 43</td>
+                <td> 50</td>
+            </tr>
+
+            <tr>
+                <td> 5. </td>
+                <td> Abdul </td>
+                <td> 10 </td>
+                <td> 12 </td>
+                <td> 43 </td>
+                <td> 43 </td>
+                <td> 43 </td>
+                <td> 43</td>
+                <td> 50</td>
+            </tr>
+
+            <tr>
+                <td colspan="9"> <center> <b> Total </b> </center> </td>
+            </tr>
+
+        </table>
+
+        </div>
+
+        <br><hr><br>
+
+        <!-- Task 4 -->
+
+        <div class="ms">
+            <table>
+                <tr>
+                    <td rowspan="3"></td>
+                    <td colspan="12"> <b> <center> BIHAR SCHOOL EXAMINATION BOARD,PATNA </center> </b> </td>
+                </tr>
+    
+                <tr>
+                    <td colspan="12"> <center> MARKS SHEET OF SECONDARY SCHOOL EXAMINATION 2005 </center> </td>
+                </tr>
+    
+                <tr>
+                    <td colspan="10"> S.NO.00338463 </td>
+                    <td colspan="2"> ANNUAL EXAMINATION </td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2"> ROLL CODE </td>
+                    <td> ROLL NO. </td>
+                    <td colspan="9"> <center> NAME OF THE STUDENT </center> </td>   
+                    <td> DATE OF BIRTH </td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2"> <center> <b> 02890 </b> </center> </td>
+                    <td> <center> <b> 0386 </b> </center> </td>
+                    <td colspan="9"> <center> <b> GOPAL KUMAR </b> </center> </td>
+                    <td> <b> 15/10/1990 </b> </td>
+                </tr>
+    
+                <tr>
+                    <td colspan="14"> SCHOOL NAME:- <b> M.A.A. HIGH SCHOOL JALALABAD MUNGER </b> </td>
+                </tr>
+    
+                <tr>
+                    <td rowspan="3"> SUBJECT </td>
+                    <td colspan="2"> <center> <b> LANGUAGE </b> </center> </td>
+                    <td rowspan="3"> <b> MATH </b> </td>
+                    <td colspan="10"> SCIENCE </td>
+                </tr>
+    
+                <tr>
+                    <td> <center> <b> MIL </b> </center> </td>
+                    <td> <center> <b> SIL </b> </center> </td>
+                    <td colspan="3"> <center> <b> PHYSICS </b> </center> </td>
+                    <td colspan="3"> <center> <b> CHEMISTRY </b> </center> </td>
+                    <td colspan="3"> <center> <b> BIOLOGY </b> </center> </td>
+                </tr>
+    
+                <tr>
+                    <td> <b> HIN </b> </td>
+                    <td> <b> SNS </b> </td> 
+                    <td> THEORY </td>
+                    <td> PR. </td>
+                    <td> TOTAL </td>
+                    <td> THEORY </td>
+                    <td> PR. </td>
+                    <td> TOTAL </td>
+                    <td> THEORY </td>
+                    <td> PR. </td>
+                    <td> TOTAL </td>
+                </tr>
+    
+                <tr>
+                    <td> FULL <br> MARKS </td>
+                    <td> 100 </td>
+                    <td> 100 </td>
+                    <td> 100 </td>
+                    <td> 45 </td>
+                    <td> 05 </td>
+                    <td> 50 </td>
+                    <td> 45 </td>
+                    <td> 05 </td>
+                    <td> 50 </td>
+                    <td> 45 </td>
+                    <td> 05 </td>
+                    <td> 50 </td>
+                </tr>
+    
+                <tr>
+                    <td> PASS <br> MARKS </td>
+                    <td> 30 </td>
+                    <td> 30 </td>
+                    <td> 30 </td>
+                    <td> <center> - </center> </td>
+                    <td> <center> - </center> </td>
+                    <td> 15 </td>
+                    <td> <center> - </center> </td>
+                    <td> <center> - </center> </td>
+                    <td> 15 </td>
+                    <td> <center> - </center> </td>
+                    <td> <center> - </center> </td>
+                    <td> 15 </td>
+                </tr>
+    
+                <tr>
+                    <td> MARKS <br> OBTAINED </td>
+                    <td> <b> 51 </b> </td>
+                    <td> <b> 68 </b> </td>
+                    <td> <b> 88 </b> </td>
+                    <td> <b> 25 </b> </td>
+                    <td> <b> 03 </b> </td>
+                    <td> <b> 28 </b> </td>
+                    <td> <b> 22 </b> </td>
+                    <td> <b> 04 </b> </td>
+                    <td> <b> 26 </b> </td>
+                    <td> <b> 18 </b> </td>
+                    <td> <b> 04 </b> </td>
+                    <td> <b> 22 </b> </td>
+                </tr>
+    
+                <tr>
+                    <td rowspan="3"> SUBJECT </td>
+                    <td colspan="3"> <center> <b> SOCIAL SCIENCE </b> </center> </td>
+                    <td colspan="4"> <center> <b> COMPUSORY OPTIONAL </b> </center> </td>
+                    <td rowspan="3" colspan=""> AGGERGATE </td>
+                    <td rowspan="3"> ENGLISH </td>
+                    <td rowspan="4" colspan="5"> <center> <b> RESULT <br> 1ST DIV <br> 2ND DIV <br> 3RD DIV <br> </b> </center> </td> 
+    
+                <tr>
+                    <td rowspan="2"> <center> <b> HIS </b> </center> </td>
+                    <td rowspan="2"> <center> <b> CIV </b> </center> </td>
+                    <td rowspan="2"> <center> <b> EED </b> </center> </td>
+                    <td colspan="4"> <center> <b> ADM </b> </center> </td>
+                </tr>
+    
+                <tr>
+                    <td> <b> THEORY </b> </td>
+                    <td> <b> THEORY </b> </td>
+                    <td> <b> PR. </b> </td>
+                    <td> <b> TOTAL</b> </td>
+                </tr>
+    
+                <tr>
+                    <td> FULL <br> MARKS </td>
+                    <td> 50 </td>
+                    <td> 50 </td>
+                    <td> 50 </td>
+                    <td> 100 </td>
+                    <td> 70 </td>
+                    <td> 30 </td>
+                    <td> 100 </td>
+                    <td> 700 </td>
+                    <td> 100 </td>
+    
+                </tr>
+    
+                <tr>
+                    <td> PASS <br> MARKS </td>
+                    <td> 15 </td>
+                    <td> 15 </td>
+                    <td> 15 </td>
+                    <td> 30 </td>
+                    <td> 21 </td>
+                    <td> 09 </td>
+                    <td> 30 </td>
+                    <td> 210 </td>
+                    <td> <center> - </center> </td>
+                    <td colspan="3"> <center> - </center> </td>
+                </tr>
+    
+                <tr>
+                    <td> MARKS <br> OBTAINED </td>
+                    <td> <b> 36 </b> </td>
+                    <td> <b> 25 </b> </td>
+                    <td> <b> 28 </b> </td>
+                    <td> <b> 67 </b> </td>
+                    <td> <center> - </center> </td>
+                    <td> <center> - </center> </td>
+                    <td> <b> 67 </b> </td>
+                    <td> <b> 439 </b> </td>
+                    <td> <b> 66 </b> </td>
+                    <td colspan="3"> <center> <b> 1st DIVN </b> </center> </td>
+                </tr>
+    
+            </table>
+        </div>
+
+        </center>
+
+        
+
+
+
+
+
+
+
+
+
+
+       
+
+    </body>
+</html>
